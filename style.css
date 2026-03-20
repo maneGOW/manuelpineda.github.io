@@ -1,0 +1,83 @@
+body {
+  background: #000 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23000" width="100" height="100"/><circle fill="%2300ff44" opacity="0.3" cx="20" cy="20" r="2"/><circle fill="%23ff0044" opacity="0.2" cx="80" cy="80" r="1"/></svg>') repeat;
+  color: #00ff00;
+  font-family: "Courier New", "Lucida Console", monospace;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+h1 { 
+  color: #00ffff; 
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+  font-size: 3em; 
+  text-align: center;
+  margin-bottom: 0;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffff; }
+  to { text-shadow: 0 0 20px #00ffff, 0 0 30px #ff00ff; }
+}
+
+h2 { 
+  color: #ffff00; 
+  border-bottom: 4px double #ff00ff;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.marquee {
+  color: #ff00ff;
+  font-size: 1.3em;
+  background: #000;
+  padding: 10px;
+  border: 2px solid #00ff00;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(0, 255, 0, 0.1);
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 8px solid #ff00ff;
+  border-radius: 0;
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+a {
+  color: #ffff00;
+  text-decoration: underline wavy #ff00ff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff00ff;
+  background: #000;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.5; }
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 3px double #00ff00;
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, transparent, #ff00ff, transparent);
+}
